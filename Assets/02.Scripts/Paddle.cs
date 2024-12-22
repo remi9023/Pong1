@@ -15,13 +15,13 @@ public class Paddle : MonoBehaviour
     // 유니티에서는 물체를 움직이는 방법이 여러가지 있다.
     // 1, 첫번째 방법 - rigidbody를 활용한 방법(물리력)
     
-    // Start is called before the first frame update
+    
     void Start()
     {
         rb = GetComponent<Rigidbody2D>(); // 애초에 리짓바디를 코드에서부터 붙여주는 것
         startPosition = transform.position;
     }
-    // Update is called once per frame
+    
     void Update()
     {
         if (isPlayer1) // Player1 오브젝트 움직임의 방향 정하기
